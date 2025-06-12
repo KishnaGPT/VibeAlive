@@ -1,0 +1,40 @@
+a{
+    font-size: 16px;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+}
+.heading:hover{
+    color: #0077b5;
+    text-shadow: 0 0 2px #0077b5;
+}
+a:hover{
+    color: #0077b5;
+    
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+    text-shadow: 2px 2px 5px #747171;
+    font-size: 250%;
+}
+h3{
+    text-transform: uppercase;
+    text-shadow: 0 0 2px #747171;
+}
+.row{
+      display: flex;
+      justify-content: space-between;
+}
+ form{
+        border: 3px solid; 
+        padding: 20px; 
+        border-radius: 8px;
+        margin-left: 10%;
+        margin-right: 10%;
+}
+.space{
+    margin-bottom: 5px;
+}

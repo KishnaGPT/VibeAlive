@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VibeAlive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="project1.css">
+    
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fs-2 mylogo" href="#">VibeAlive</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item ">
+                    <a class="nav-link current currentpage" aria-current="page" href="trial.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="series.html">Series</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kids.html">Kids</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tvshows.html">TVShows</a>
+                </li>
+                <li class="nav-item dropdown" data-bs-theme="dark">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item sizes" href="login.html"><i class="bi bi-box-arrow-right"></i> Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                        </ul>
+                </li>
+            </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 mysearch" data-bs-theme="light" type="search" placeholder="Search site" aria-label="Search"/>
+                    <button class="btn btn-outline-info btn-lg ms-3 mysearchbtn" type="submit">Search</button>
+                </form>     
+        </div>
+    </div>
+  </nav>
+
+  
+  <div class="banner text-white">
+    <div>
+      <h1><span>Unlimited </span><span>Movies, </span><span>TV </span> <span>Shows, </span> <span>& </span> <span>More</span></h1>
+      <p class="lead">Its Time To Vibe, Unless You Are Not Alive!</p>
+      <a href="#" class="btn btn-outline-info mysearchbtn btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Watch Now</a>
+    </div>
+  </div>
+
+  <!-- log in -->
+
+  <div class="modal fade myformcontainer" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div>
+        <form class="myform" method="get">
+            <label for="username">Username</label>
+            <input type="email" id="username" name="username" placeholder="Enter your email">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <button type="submit" class="btn btn-outline-info mysearchbtn m-4 p-2" data-bs-dismiss="modal"><i class="bi bi-box-arrow-right"></i> Login</button>
+            <div>OR</div>
+            <input type="submit" value="Continue with Google"class="btn btn-outline-info">
+            <input type="submit" value="Continue with Apple" class="btn btn-outline-info">
+        </form>
+      </div>
+      <div class="modal-footer">
+        Not a User?<button type="button" class="btn btn-outline-info mysearchbtn" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal2">Register</button>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Register -->
+
+
+    <div class="modal fade myformcontainer" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div>
+        <form class="myform">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="name" placeholder="Enter your name">
+            <div class="gender">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="Male" required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="Female" required>
+            </div>
+
+            <label for="date">Date of Birth</label>
+            <input type="date" id="date">
+
+            <label for="username">Email</label>
+            <input type="email" id="username" name="username" placeholder="Enter your email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+
+            <label for="cpassword">Confirm Password</label>
+            <input type="text" id="cpassword">
+
+            <button type="submit" class="btn btn-outline-info mysearchbtn m-4 p-2" data-bs-dismiss="modal">Register</button>
+
+            
+        </form>
+      </div>
+      <div class="modal-footer">
+        Already a User?<button type="button" class="btn btn-outline-info mysearchbtn" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal1">Login</button>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Featured Carousel -->
+  <div id="carouselExample" class="carousel slide mt-5 container" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABR9-Gr6yb8rbprhbRyUs_p7UAbZDFgHyvTdIIRUNqD4MAqrI0lR8EicUf71MxAKZSTaqIWlTkG8C1vMyhQNx6futMFl004drgeiX.jpg?r=ddd" class="d-block w-100" alt="Movie">
+      </div>
+      <div class="carousel-item">
+        <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABRbbDKmpRDQgIIQGjOibKYCzmESXzV3W7HMcazrJXNB6wt5SNv4oRT6in0Mf9hcfcD7Ea0gG0CbEjhdPOlC8cuRxdQt56hRWtzuD.jpg?r=db0" class="d-block w-100" alt="Movie">
+      </div>
+      <div class="carousel-item">
+        <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABaY1CJn-aZ28vh7gQgEOv6bxmeOivRPGXkVghMNLDDEYqIQbUfak34ZbB-a0byi8rHbnA3sufBnfY2Lw_jGt3wgBdkRElR6ekMPo.jpg?r=ed1" class="d-block w-100" alt="Movie">
+      </div>
+      <div class="carousel-item">
+        <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABcy615WlSSTWdgCHTAHXhJZCZFwuwIhd5-4Pc7jcCI8PzU1t5IAS6LciuVzYycxQb_f3hhakmx5uMm5HZkvtTP8piJNPcf586TzY.jpg?r=a8e" class="d-block w-100" alt="Movie">
+      </div>
+      <div class="carousel-item">
+        <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABd2D6eS-ecm48Y4GgjGWLBlYfIv67aKJKfE9Kh76TxDGTw6ucXGklCu2QbNWcXWImJ9Ks7qAB6DPdOHO2T71FCThxG73j36OtSKC.jpg?r=d68" class="d-block w-100" alt="Movie">
+      </div>
+      
+      
+      
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Movie Grid -->
+  <div class="container mt-5">
+    <h2 class="mb-4 category" >Popular on VibeAlive</h2>
+    <div class="row g-3">
+      <div class="col-md-3 col-6 desc">
+        <button class=" btn btn-danger b1"data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on top">Info</button>
+        <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4887/1740985024887-v" class="movie-img ract" />
+      </div>
+      <div class="col-md-3 col-6">
+        <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5168/875168-v" class="movie-img ract" />
+      </div>
+      <div class="col-md-3 col-6">
+        <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3052/1729134893052-v" class="movie-img ract" />
+      </div>
+      <div class="col-md-3 col-6">
+        <img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9661/1714363179661-v" class="movie-img ract" />
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+
+  <div class="container mt-5">
+    <h2 class="mb-4 category" >Search By Categories</h2>
+    <div class="row g-3">
+      <div class="col-md-3 col-6">
+        <a href="series.html">
+        <img src="https://img.freepik.com/free-vector/flat-design-korean-drama-lettering_23-2149656877.jpg" class="movie-img" /></a>
+      </div>
+      <div class="col-md-3 col-6">
+        <img src="https://cdn1.vectorstock.com/i/1000x1000/53/50/bollywood-indian-cinema-film-banner-vector-26165350.jpg" class="movie-img" />
+      </div>
+      <div class="col-md-3 col-6">
+        <a href="movies.html">
+        <img src="https://th.bing.com/th/id/OIP.SpJ9ZyJXimyqDMQ7gJPELAHaE1?rs=1&pid=ImgDetMain" class="movie-img" /></a>
+      </div>
+      <div class="col-md-3 col-6">
+        <a href="kids.html">
+        <img src="https://static.vecteezy.com/system/resources/previews/007/380/516/non_2x/colorful-kids-logo-children-logo-designs-template-design-element-for-logo-poster-card-banner-emblem-t-shirt-illustration-vector.jpg" class="movie-img" /></a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="myfooter bg-body-dark mt-5">
+                <div class="mycol">
+                    <h4>VibeAlive</h4>
+                    <ul class="mystyle">
+                        <li class="mb-2 glow">Home</li>
+                        <li class="mb-2 glow">Movies</li>
+                        <li class="mb-2 glow">Series</li>
+                        <li class="mb-2 glow">Kids</li>
+                        <li class="mb-2 glow">TVShows</li>
+                        
+                    </ul>
+                </div>
+                <div class="mycol">
+                    <h4>Categories</h4>
+                    <ul class="mystyle">
+                        <li class="mb-2 glow">Action Thriller</li>
+                        <li class="mb-2 glow">Marvals</li>
+                        <li class="mb-2 glow">Kdramas</li>
+                        <li class="mb-2 glow">Anime</li>
+                        <li class="mb-2 glow">Kids Shows</li>
+                        
+                    </ul>
+
+                </div>
+                <div class="mycol">
+                    <h4>Follow Us</h4>
+                    <ul class="mystyle">
+                        <li class="mb-2 glow"><i class="bi bi-facebook"></i></li>
+                        <li class="mb-2 glow"><i class="bi bi-instagram"></i></li>
+                        <li class="mb-2 glow"><i class="bi bi-linkedin"></i></li>
+                        <li class="mb-2 glow"><i class="bi bi-twitter"></i></li>
+                    </ul>
+                </div>
+            </div>
+  </footer>
+
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

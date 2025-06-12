@@ -1,0 +1,195 @@
+
+body{
+    background-color: black;
+    color: aliceblue;
+    
+}
+*{
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.navbar-brand{
+    font-size: 32px;
+    padding: 1rem;
+    
+}
+.mt-5{
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+}
+.container-fluid{
+    padding-right: 20px;
+}
+
+.nav-link{
+    font-size: 20px;
+}
+.navbar-nav .nav-link.active{
+    color: aquamarine;
+
+}
+
+.nav-link:hover, .active{
+    color: aquamarine;
+    text-shadow: 0 0 20px aquamarine;
+}
+
+
+.logo{
+    color: aquamarine;
+    font-weight: 500;
+   
+    text-shadow: 0 0 25px aquamarine;
+}
+
+@media(min-width:992px){
+    /* .navbar-brand{
+        margin-right: 300px;
+    } */
+    .logo{
+
+        padding-left: 20px;
+    }
+
+}
+@media(max-width:329px){
+    .navbar-brand{
+        margin-right: 5px;
+    }
+}
+
+
+
+section.hero{
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+@media (max-width: 576px){
+    section.hero{
+        text-align: center;
+    }
+}
+section class[class^="container"]{
+    padding: 4rem 2rem;
+}
+
+@media (min-width:1024px){
+    section class[class^="container"]{
+    padding: 4rem 2rem;
+    }
+    nav class[class^="container"]{
+    padding: 0 4rem;
+    }
+}
+
+
+.img-fluid{
+    border-radius: 50%;
+    height: 400px;
+    box-shadow: 0 0 25px aquamarine;
+}
+
+.btn{
+    background-color: aquamarine;
+    border-color: aquamarine;
+    color: black;
+    border-radius: 5rem;
+    box-shadow: 0 0 25px aquamarine;
+    
+}
+
+.btn:hover{
+    box-shadow: none;
+    background-color: aquamarine;
+    color: black;
+    transform: scale(1.1);
+    font-size: 1rem;
+
+}
+.btn:active{
+    background-color: aquamarine;
+}
+
+.btn-sci{
+    
+    border: 2px solid aquamarine;
+    border-radius: 50%;
+    
+    color: aquamarine;
+    margin: 5px;
+    font-size: 20px;
+    transition: 0.3s ease;
+    align-content: center;
+    vertical-align: middle;
+}
+.btn-sci:hover{
+
+    color: black;
+    background-color: aquamarine;
+    box-shadow: 0 0 20px aquamarine;
+    
+}
+.mycolor{
+    color: aquamarine;
+}
+.edu, .ski, .pro{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.badge{
+    font-size: 50px;
+    display: block;
+}
+
+.progress{
+    font-size: 16px;
+    height: 25px;
+    
+}
+
+.mycol{
+    height: 220px;
+
+}
+
+.skillcol{
+    border: 1px solid aquamarine;
+}
+
+.form-label{
+    justify-content: flex-start;
+}
+
+
+
+section.hero2{
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+
+
+.progress-bar{
+    background-color: aquamarine;
+    color: black;
+    
+}
+
+div.progress{
+    box-shadow: 0 0 10px aquamarine;
+}
+
+.bi{
+    color: aquamarine;
+}
+

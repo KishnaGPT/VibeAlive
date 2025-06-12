@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="project1.css">
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand--bs-primary-text-emphasis size mylogo p-4" href="#">Vibe<span>Alive</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item ">
+                    <a class="nav-link active current" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Series</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kids</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TVShows</a>
+                </li>
+                <li class="nav-item dropdown" data-bs-theme="dark">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                        </ul>
+                </li>
+            </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" data-bs-theme="light" type="search" placeholder="Search site" aria-label="Search"/>
+                    <button class="btn btn-outline-info btn-lg ms-3" type="submit">Search</button>
+                </form>     
+        </div>
+    </div>
+    </nav>
+
+
+    <!-- <header class="myheader fixed-top">
+
+            <a href="#Home" class="mylogo">Vibe<span>Alive</span></a>
+            
+            <i class="bi bi-list" id="menu-icon"></i>
+            
+            <nav class="mynavbar">
+                <a href="#Home" class="current">Home</a>
+                <a href="#Movies">Movies</a>
+                <a href="#shows">TVShows</a>
+                <a href="#Series">Series</a>
+            </nav>
+            
+            <form class="d-flex navform">
+                <input class="form-control me-2 mysearch" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info btn-lg ms-3" type="submit" style="width: 100px;">Login</button>
+            </form>
+            
+    </header> -->
+    
+    
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABR9-Gr6yb8rbprhbRyUs_p7UAbZDFgHyvTdIIRUNqD4MAqrI0lR8EicUf71MxAKZSTaqIWlTkG8C1vMyhQNx6futMFl004drgeiX.jpg?r=ddd" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    
+                    <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABfYmaPMwKNh2UphaWmwZfV62aGdJqg_BqFQEsL84H5JntPjYdSakdllcfjt901zCGJVJUj47sZZrsvk6vHoFQdZgWYLjH73lymHmpBqx67o.png?r=84d" alt="" class="slides">
+                    
+                    <div><button type="button" class=" btn btn-outline-info btn-lg-watch p-3">Watch Now</button><i class="bi bi-heart"></i></div>
+                    
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABX00BWUfufup0X8ZXIji1c01vRj3oKWLlq15aztxtk-Q4_CMheSvpu0wJie3Cu3Vpfy9RV8RguwtpaVgdoxdGYLsXuQPtg0E7Wn4.jpg?r=5fd" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    
+                    <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABSKav3GfLMJEkWXJukTGHRy8je9S675tS3tCdVqrfc9oWA4wHd_JZ2NGyIeejejIkkdtReBTwvm40oVhDC1dsoQvaCINr6OQydQRIhGfCB-hPFCpx-m5RFDyCyKEoASaPhDE2-7pUA0rLECLmalH2lh8cDNyvs7IOacl-4u9rTFbp6ZWWAtm.png?r=aee" alt="" class="slides">
+                    
+                    <div><button type="button" class=" btn btn-outline-info btn-lg-watch p-3">Watch Now</button><i class="bi bi-heart"></i></div>
+                    
+                </div>
+                
+            </div>
+            <div class="carousel-item">
+                <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABZk1XZZwW8zQTuwWN0NigdIkIpsbmbEI_zWyPJfuMLbdU92U2cCMKidsla6j6kz3xTPvmHkb6OAhuVj5c5oDjy2vGMLQ2eKahbFx.jpg?r=929" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    
+                    <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABSFMA1WMSi4hLC8jSJkhM1RWZ_ksdBVwufhXlp0omVRXPFrGnk6rbFNS8DJn05q0jw76jwsV3_nJNBb4lA5pbNsGPYU3fDgz087okAMBH50.png?r=6b4" alt="" class="slides">
+                    
+                    <div><button type="button" class=" btn btn-outline-info btn-lg-watch p-3">Watch Now</button><i class="bi bi-heart"></i></div>
+                    
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABYAazDzVnNO4W01xzzljkWCbW2D2FoRQfKtd4WnSb59kZQ-IrbxOH1Zows7iI6tbfKcqjKw2PspDrjCrq51sW0QJ8q4oublWqXLm.jpg?r=a11" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    
+                    <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABdumumGoZIghNp91B_nWQgxZ1wFKWlMpp8gcoK3tFU_5Rk2UK-4CpND5HCy9mRUxiLRO9-6dg8TTri4F7mkEDXpzXsIqDZkyTyIm6JkD_roE.png?r=ad3" alt="" class="slides">
+                    
+                    <div><button type="button" class=" btn btn-outline-info btn-lg-watch p-3">Watch Now</button><i class="bi bi-heart"></i></div>
+                    
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABemRQ3BPO1lQJMMowOFuGX1eegn2e9S4iCAIp3UpyXTxSsHBxXRG2HxEUVIBqcbYV3QLMc6UIc53IRPTkNhrLwOYE1PxhpsJgaTs.jpg?r=a0a" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    
+                    <img src="https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABdh7pdpR_E8ta3Trd9gsH_uSg2hd17wREbOj0wn1WZah4zq1_NYxJuFV3zEeH3z9ig-WPdDDoXoFaYoYreK4BMl3W9IUAFs3Oq5e9CJE97U.png?r=ef0" alt="" class="slides">
+                    
+                    <div><button type="button" class=" btn btn-outline-info btn-lg-watch p-3">Watch Now</button><i class="bi bi-heart"></i></div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+   
+    <!-- Section -->
+    
+   
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
